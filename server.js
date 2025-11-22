@@ -42,9 +42,6 @@ const transactionsRoute = require('./routes/transaction');
 // Use routes
 app.use('/api', authRoutes, manageTasksRoute, activiRoute, claimRoute, adminRoute, manageUserssRoute, settingsRoute, transactionsRoute);
 
-app.get('/*', function(req, res) {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
 
 // MongoDB Atlas connection
 const MONGODB_URI = process.env.MONGODB_URI || 'your_mongodb_atlas_uri';
