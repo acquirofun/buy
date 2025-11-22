@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // CORS configuration
 app.use(cors({
-  origin: ['https://alphadogsgame.fun'], // Include your frontend URLs
+  origin: ['https://buyclient.vercel.app/'], // Include your frontend URLs
   methods: ['GET', 'POST', 'DELETE', 'PUT', 'OPTIONS'],
   credentials: true,
 }));
